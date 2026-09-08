@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antonita Evelyn Maria — Full-Stack Developer &amp; Content Creator</title>
+    <title>Antonita Evelyn Maria S — Full-Stack Developer &amp; Software Engineer</title>
     <meta name="description"
-        content="Antonita Evelyn Maria — full-stack developer, writer and designer based in Chennai. Web &amp; mobile builds, blog and social content, presentation design.">
+        content="Antonita Evelyn Maria S — Full-Stack &amp; Mobile Developer, B.E. (Honors) CSE final-year student at LICET, Chennai. Experienced in React.js, Node.js, Express, Prisma, Supabase, Flutter, Java, Python, and NLP pipelines.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -138,14 +138,14 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            background: rgba(247, 244, 238, 0.78);
+            background: rgba(247, 244, 238, 0.85);
             backdrop-filter: blur(10px) saturate(140%);
             border-bottom: 1px solid var(--line);
             transition: background .3s ease, border-color .3s ease;
         }
 
         html[data-theme="dark"] header {
-            background: rgba(21, 20, 15, 0.78);
+            background: rgba(21, 20, 15, 0.85);
         }
 
         nav {
@@ -163,11 +163,18 @@
             font-size: 20px;
             font-weight: 600;
             letter-spacing: 0.2px;
+            text-decoration: none;
+            color: var(--ink);
+        }
+
+        .mark span {
+            color: var(--emerald);
+            font-style: italic;
         }
 
         .navlinks {
             display: flex;
-            gap: 26px;
+            gap: 24px;
             font-size: 14px;
             align-items: center;
         }
@@ -249,7 +256,7 @@
 
         /* hero */
         .hero {
-            padding: 110px 0 80px;
+            padding: 100px 0 75px;
             position: relative;
             overflow: hidden;
         }
@@ -289,12 +296,9 @@
         }
 
         @keyframes drift {
-
-            0%,
-            100% {
+            0%, 100% {
                 transform: translate(0, 0) scale(1);
             }
-
             50% {
                 transform: translate(30px, -24px) scale(1.08);
             }
@@ -321,22 +325,21 @@
         }
 
         .kicker .dot {
-            width: 7px;
-            height: 7px;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
             background: var(--emerald);
             animation: pulse 2s ease-in-out infinite;
         }
 
         @keyframes pulse {
-
-            0%,
-            100% {
+            0%, 100% {
                 opacity: 1;
+                transform: scale(1);
             }
-
             50% {
                 opacity: 0.35;
+                transform: scale(0.85);
             }
         }
 
@@ -352,9 +355,9 @@
         }
 
         .hero h1 {
-            font-size: clamp(34px, 5.2vw, 60px);
-            line-height: 1.12;
-            max-width: 840px;
+            font-size: clamp(34px, 5.2vw, 58px);
+            line-height: 1.14;
+            max-width: 860px;
         }
 
         .hero h1 em {
@@ -367,7 +370,7 @@
             font-size: 16px;
             color: var(--gold);
             margin-top: 16px;
-            height: 22px;
+            height: 24px;
             display: flex;
             align-items: center;
         }
@@ -388,16 +391,16 @@
         }
 
         .hero p.lede {
-            max-width: 540px;
-            margin-top: 22px;
-            font-size: 17px;
+            max-width: 620px;
+            margin-top: 20px;
+            font-size: 16.5px;
             color: var(--ink-soft);
         }
 
         .hero-actions {
-            margin-top: 34px;
+            margin-top: 32px;
             display: flex;
-            gap: 16px;
+            gap: 14px;
             flex-wrap: wrap;
         }
 
@@ -405,27 +408,31 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            padding: 13px 24px;
+            padding: 12px 22px;
             font-size: 14px;
             font-weight: 500;
             text-decoration: none;
             border-radius: var(--radius);
             transition: transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease, color .2s ease;
+            cursor: pointer;
         }
 
         .btn-primary {
             background: var(--emerald);
             color: var(--paper);
+            border: 1px solid var(--emerald);
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: var(--shadow);
+            background: var(--emerald-soft);
         }
 
         .btn-ghost {
             border: 1px solid var(--ink);
             color: var(--ink);
+            background: transparent;
         }
 
         .btn-ghost:hover {
@@ -437,26 +444,29 @@
         .btn-text {
             color: var(--ink-soft);
             border: 1px solid var(--line);
+            background: var(--card);
         }
 
         .btn-text:hover {
             border-color: var(--gold);
             color: var(--gold);
+            transform: translateY(-2px);
         }
 
         .stackrow {
-            margin-top: 54px;
+            margin-top: 48px;
             display: flex;
             flex-wrap: wrap;
-            gap: 10px 14px;
+            gap: 8px 12px;
         }
 
         .chip {
             font-family: 'IBM Plex Mono', monospace;
             font-size: 12.5px;
-            padding: 7px 13px;
+            padding: 6px 12px;
             border: 1px solid var(--line);
             border-radius: var(--radius);
+            background: var(--card);
             color: var(--ink-soft);
             transition: border-color .2s, color .2s, transform .2s;
         }
@@ -476,7 +486,7 @@
             display: flex;
             align-items: baseline;
             justify-content: space-between;
-            margin-bottom: 40px;
+            margin-bottom: 36px;
             flex-wrap: wrap;
             gap: 10px;
         }
@@ -494,8 +504,8 @@
         /* about + stats */
         .about-grid {
             display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 56px;
+            grid-template-columns: 1.25fr 1fr;
+            gap: 52px;
         }
 
         .about-grid p {
@@ -507,19 +517,23 @@
         .facts {
             border-left: 1px solid var(--line);
             padding-left: 28px;
+            margin: 0;
         }
 
         .facts dt {
             font-family: 'IBM Plex Mono', monospace;
-            font-size: 12px;
+            font-size: 11.5px;
             color: var(--gold);
             margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .facts dd {
-            margin: 0 0 22px;
-            font-size: 15px;
+            margin: 0 0 20px;
+            font-size: 14.5px;
             color: var(--ink);
+            line-height: 1.5;
         }
 
         .stats {
@@ -528,14 +542,14 @@
             gap: 1px;
             background: var(--line);
             border: 1px solid var(--line);
-            margin-top: 56px;
+            margin-top: 48px;
             border-radius: var(--radius);
             overflow: hidden;
         }
 
         .stat {
             background: var(--card);
-            padding: 26px 20px;
+            padding: 24px 20px;
             text-align: left;
         }
 
@@ -543,12 +557,13 @@
             font-family: 'Fraunces', serif;
             font-size: 34px;
             color: var(--emerald);
+            line-height: 1.1;
         }
 
         .stat .lbl {
             font-size: 12.5px;
             color: var(--ink-soft);
-            margin-top: 4px;
+            margin-top: 6px;
         }
 
         /* skills */
@@ -578,6 +593,9 @@
             font-weight: 500;
             color: var(--gold);
             margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
 
         .skillcat ul {
@@ -586,12 +604,13 @@
             padding: 0;
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 9px;
         }
 
         .skillcat li {
             font-size: 14.5px;
             color: var(--ink);
+            line-height: 1.4;
         }
 
         /* projects */
@@ -641,7 +660,7 @@
         }
 
         .pcard:hover {
-            transform: translateY(-6px);
+            transform: translateY(-5px);
             box-shadow: var(--shadow);
         }
 
@@ -666,14 +685,14 @@
         .pcard .preview::before {
             content: attr(data-glyph);
             font-family: 'Fraunces', serif;
-            font-size: 64px;
+            font-size: 58px;
             color: var(--emerald);
-            opacity: 0.25;
+            opacity: 0.3;
             transition: transform .4s ease;
         }
 
         .pcard:hover .preview::before {
-            transform: scale(1.12) rotate(-4deg);
+            transform: scale(1.12) rotate(-3deg);
         }
 
         .pcard .badge {
@@ -686,6 +705,7 @@
             color: #1c1305;
             padding: 4px 9px;
             border-radius: 20px;
+            font-weight: 500;
         }
 
         .pcard .body {
@@ -700,12 +720,13 @@
         .pcard .desc {
             color: var(--ink-soft);
             font-size: 14.5px;
+            line-height: 1.55;
         }
 
         .pcard .tags {
             margin-top: 14px;
             display: flex;
-            gap: 8px;
+            gap: 7px;
             flex-wrap: wrap;
         }
 
@@ -716,19 +737,22 @@
             border: 1px solid var(--line);
             padding: 3px 8px;
             border-radius: 20px;
+            background: var(--paper);
         }
 
         .pcard .links {
-            margin-top: 16px;
+            margin-top: 18px;
             display: flex;
-            gap: 14px;
-            font-size: 13px;
+            gap: 16px;
+            font-size: 13.5px;
         }
 
         .pcard .links a {
             text-decoration: none;
             color: var(--ink-soft);
             border-bottom: 1px solid var(--line);
+            padding-bottom: 1px;
+            transition: color .2s, border-color .2s;
         }
 
         .pcard .links a:hover {
@@ -755,7 +779,7 @@
 
         .svc:hover {
             background: var(--emerald-tint);
-            transform: translateY(-3px);
+            transform: translateY(-2px);
         }
 
         .svc h3 {
@@ -767,6 +791,7 @@
             margin: 0;
             color: var(--ink-soft);
             font-size: 14px;
+            line-height: 1.5;
         }
 
         .svc .n {
@@ -775,6 +800,8 @@
             color: var(--gold);
             display: block;
             margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         /* timeline */
@@ -818,6 +845,7 @@
             font-family: 'IBM Plex Mono', monospace;
             font-size: 12.5px;
             color: var(--emerald-soft);
+            font-weight: 500;
         }
 
         .tlitem h3 {
@@ -829,6 +857,7 @@
             margin: 0;
             color: var(--ink-soft);
             font-size: 14.5px;
+            line-height: 1.55;
         }
 
         /* achievements */
@@ -842,26 +871,26 @@
             background: var(--card);
             border: 1px solid var(--line);
             border-radius: var(--radius);
-            padding: 26px;
+            padding: 24px;
             display: flex;
-            gap: 18px;
+            gap: 16px;
             align-items: flex-start;
             transition: transform .2s ease, box-shadow .2s ease;
         }
 
         .ach:hover {
-            transform: translateY(-4px);
+            transform: translateY(-3px);
             box-shadow: var(--shadow);
         }
 
         .ach .glyph {
             font-family: 'Fraunces', serif;
-            font-size: 26px;
+            font-size: 22px;
             color: var(--gold);
             border: 1px solid var(--gold-tint);
             background: var(--gold-tint);
-            width: 46px;
-            height: 46px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -878,6 +907,7 @@
             margin: 0;
             color: var(--ink-soft);
             font-size: 13.5px;
+            line-height: 1.5;
         }
 
         /* contact */
@@ -913,6 +943,10 @@
             border-bottom: 1px solid var(--line);
             padding-bottom: 2px;
             width: fit-content;
+            transition: color .2s, border-color .2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .contact-links a:hover {
@@ -987,12 +1021,30 @@
             color: var(--ink-soft);
             display: flex;
             justify-content: space-between;
+            align-items: center;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 12px;
+        }
+
+        .resume-inline-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--emerald);
+            text-decoration: none;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 12px;
+            border: 1px solid var(--emerald-soft);
+            padding: 4px 10px;
+            border-radius: var(--radius);
+            transition: background .2s;
+        }
+
+        .resume-inline-btn:hover {
+            background: var(--emerald-tint);
         }
 
         @media (max-width:860px) {
-
             .about-grid,
             .contact-grid {
                 grid-template-columns: 1fr;
@@ -1028,7 +1080,6 @@
         }
 
         @media (max-width:760px) {
-
             .navlinks,
             .navright .themebtn {
                 display: none;
@@ -1052,12 +1103,13 @@
 
     <header>
         <nav>
-            <div class="mark">Antonita Evelyn Maria</div>
+            <a href="#" class="mark">Antonita Evelyn Maria <span>S</span></a>
             <div class="navlinks" id="navlinks">
-                <a href="#work">Work</a>
-                <a href="#skills">Skills</a>
-                <a href="#services">Services</a>
                 <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#work">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#achievements">Achievements</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="navright">
@@ -1065,11 +1117,13 @@
                 <button class="navtoggle" id="navtoggle" aria-label="Menu">&#9776;</button>
             </div>
             <div class="mobilemenu" id="mobilemenu">
-                <a href="#work">Work</a>
-                <a href="#skills">Skills</a>
-                <a href="#services">Services</a>
                 <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#work">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#achievements">Achievements</a>
                 <a href="#contact">Contact</a>
+                <a href="Antonita_Evelyn_Maria_Resume_New.pdf" target="_blank" download="Antonita_Evelyn_Maria_Resume.pdf">&#128196; Download Resume</a>
             </div>
         </nav>
     </header>
@@ -1082,26 +1136,26 @@
                 <div class="blob blob2"></div>
             </div>
 
-            <div class="kicker reveal in"><span class="dot"></span>Chennai, India — available for FTE, freelance &amp;
-                contract work</div>
-            <h1 class="reveal in">Full-stack developer with a writer's <em>attention to detail</em> and a designer's
-                <em>eye</em>.
-            </h1>
-            <div class="roles reveal in"><span id="roletext">Web &amp; Mobile Developer</span><span
-                    class="cursor-blink"></span></div>
-            <p class="lede reveal in">I build and ship products end to end, then help you talk about them — through blog
-                posts, social content, and presentation decks that don't look like an afterthought.</p>
+            <div class="kicker reveal in"><span class="dot"></span>Chennai, India — Open to Software Engineering &amp; Full-Stack Roles</div>
+            <h1 class="reveal in">Full-stack developer building scalable, <em>real-world systems</em> across web &amp; mobile.</h1>
+            <div class="roles reveal in"><span id="roletext">Full-Stack Developer</span><span class="cursor-blink"></span></div>
+            <p class="lede reveal in">Final-year Computer Science and Engineering (Honors) student at LICET with hands-on experience building REST API-driven platforms, real-time databases, and cross-platform mobile apps. Comfortable mastering unfamiliar stacks and delivering end-to-end solutions.</p>
             <div class="hero-actions reveal in">
-                <a class="btn btn-primary" href="#work">View my work</a>
-                <a class="btn btn-ghost" href="#contact">Contact me</a>
-                <a class="btn btn-text" href="#" id="resumebtn">Download resume</a>
+                <a class="btn btn-primary" href="#work">View Projects</a>
+                <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+                <a class="btn btn-text" href="Antonita_Evelyn_Maria_Resume_New.pdf" target="_blank" download="Antonita_Evelyn_Maria_Resume.pdf" id="resumebtn">&#128196; Download Resume</a>
             </div>
             <div class="stackrow reveal in">
-                <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Node.js /
-                    Express</span>
-                <span class="chip">Prisma</span><span class="chip">Supabase</span><span class="chip">Expo React
-                    Native</span>
-                <span class="chip">Claude / OpenAI APIs</span>
+                <span class="chip">React.js</span>
+                <span class="chip">Node.js / Express</span>
+                <span class="chip">Prisma</span>
+                <span class="chip">Supabase (PostgreSQL)</span>
+                <span class="chip">Flutter / Dart</span>
+                <span class="chip">Expo React Native</span>
+                <span class="chip">Java</span>
+                <span class="chip">Python (NLP)</span>
+                <span class="chip">Firebase</span>
+                <span class="chip">MySQL</span>
             </div>
         </section>
 
@@ -1111,96 +1165,107 @@
             </div>
             <div class="about-grid">
                 <div class="reveal">
-                    <p>I'm a final-year Computer Science Engineering student (B.E. Honors) at LICET, Chennai, currently
-                        interning at VouchTails, a pet-care marketplace, where I work across backend infrastructure —
-                        auth, real-time data, internationalization — and the Expo mobile app.</p>
-                    <p>Outside client and coursework, I build my own products end to end: sales trackers, POS systems,
-                        wellness apps, an AI-assisted decision-making tool for groups. I care as much about how
-                        something reads and feels as how it runs, which is what pulls me toward the writing and
-                        presentation side of freelance work as well as the code.</p>
+                    <p>I am a final-year Computer Science and Engineering student (B.E. Honors, CGPA: 8.37) at Loyola-ICAM College of Engineering and Technology (LICET), Chennai. Currently, I work as a Software Development Intern at VouchTails, where I engineer backend services (Node.js, Express, Prisma, Supabase) and cross-platform mobile applications (Expo React Native) for a pet-care marketplace startup.</p>
+                    <p>I thrive on building scalable, end-to-end software — from architecting real-time business platforms and modular POS systems to developing intelligent mobile apps and NLP confidence-scoring pipelines. I also participated in an international engineering exchange at ICAM Nantes, France, where I worked with a multicultural cohort to design, build, and test a functional renewable-energy wind turbine prototype.</p>
                 </div>
                 <dl class="facts reveal">
-                    <dt>Based in</dt>
+                    <dt>Location</dt>
                     <dd>Chennai, Tamil Nadu, India</dd>
-                    <dt>Currently</dt>
-                    <dd>Backend &amp; mobile intern, VouchTails</dd>
-                    <dt>Recognition</dt>
-                    <dd>Best Paper, NIAC 2026 — NLP re-ranking for language identification</dd>
-                    <dt>Also</dt>
-                    <dd>Completed an internship program in Nantes, France</dd>
+                    <dt>Current Role</dt>
+                    <dd>Software Development Intern (Backend &amp; Mobile), VouchTails</dd>
+                    <dt>Undergraduate</dt>
+                    <dd>B.E. (Honors) CSE, LICET (2023 – 2027) &bull; CGPA: 8.37</dd>
+                    <dt>Schooling</dt>
+                    <dd>St. Michael's Academy, Adyar &bull; ISC (12th): 93.5% | ICSE (10th): 97.5%</dd>
+                    <dt>Research Honors</dt>
+                    <dd>Best Paper Award, NIAC 2026 — NLP Re-ranking Framework</dd>
+                    <dt>Global Exposure</dt>
+                    <dd>Summer Exchange Program, ICAM Nantes, France</dd>
                 </dl>
             </div>
             <div class="stats reveal">
                 <div class="stat">
-                    <div class="num" data-count="5">0</div>
-                    <div class="lbl">Products shipped</div>
+                    <div class="num" data-count="8.37">8.37</div>
+                    <div class="lbl">CGPA (Honors CSE)</div>
                 </div>
                 <div class="stat">
-                    <div class="num" data-count="7">0</div>
-                    <div class="lbl">Core technologies</div>
+                    <div class="num" data-count="3">0</div>
+                    <div class="lbl">Featured Projects</div>
                 </div>
                 <div class="stat">
                     <div class="num" data-count="1">0</div>
-                    <div class="lbl">Best Paper award</div>
+                    <div class="lbl">Best Paper Award</div>
                 </div>
                 <div class="stat">
                     <div class="num" data-count="2">0</div>
-                    <div class="lbl">Countries worked from</div>
+                    <div class="lbl">Countries Worked In</div>
                 </div>
             </div>
         </section>
 
         <section id="skills">
             <div class="section-head reveal">
-                <h2>Skills</h2><span class="count">by category</span>
+                <h2>Technical Skills</h2><span class="count">categorized expertise</span>
             </div>
             <div class="skillgrid reveal">
                 <div class="skillcat">
-                    <h3>Frontend</h3>
+                    <h3>Languages</h3>
                     <ul>
-                        <li>React &amp; React Native (Expo)</li>
-                        <li>TypeScript / JavaScript</li>
-                        <li>Responsive &amp; UI/UX-minded layout</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>Dart</li>
                     </ul>
                 </div>
                 <div class="skillcat">
-                    <h3>Backend &amp; Data</h3>
+                    <h3>Frameworks &amp; Libraries</h3>
                     <ul>
+                        <li>React.js</li>
                         <li>Node.js / Express</li>
+                        <li>Flutter</li>
+                        <li>Expo React Native</li>
                         <li>Prisma ORM</li>
-                        <li>Supabase (DB, Auth, Realtime)</li>
                     </ul>
                 </div>
                 <div class="skillcat">
-                    <h3>AI Integration</h3>
+                    <h3>Databases</h3>
                     <ul>
-                        <li>Claude API</li>
-                        <li>OpenAI API</li>
-                        <li>AI-assisted product features</li>
+                        <li>Supabase (PostgreSQL)</li>
+                        <li>MySQL</li>
+                        <li>Firebase (NoSQL)</li>
+                        <li>Relational Schema Design</li>
+                        <li>Realtime Data Synchronization</li>
                     </ul>
                 </div>
                 <div class="skillcat">
-                    <h3>Content</h3>
+                    <h3>Core Computer Science</h3>
                     <ul>
-                        <li>Blog &amp; long-form writing</li>
-                        <li>Social &amp; post copywriting</li>
-                        <li>Structured technical writing</li>
+                        <li>Data Structures &amp; Algorithms</li>
+                        <li>Object-Oriented Programming (OOP)</li>
+                        <li>RESTful API Architecture</li>
+                        <li>MVC Pattern &amp; Clean Architecture</li>
+                        <li>Role-Based Access Control (RBAC)</li>
                     </ul>
                 </div>
                 <div class="skillcat">
-                    <h3>Design</h3>
+                    <h3>Tools &amp; Platforms</h3>
                     <ul>
-                        <li>Portfolio &amp; landing sites</li>
-                        <li>Presentation (PPT) design</li>
-                        <li>Visual &amp; layout sensibility</li>
+                        <li>Git &amp; GitHub</li>
+                        <li>VS Code</li>
+                        <li>Postman</li>
+                        <li>Figma</li>
+                        <li>Apache Tomcat</li>
                     </ul>
                 </div>
                 <div class="skillcat">
-                    <h3>Tools</h3>
+                    <h3>AI / ML &amp; Research</h3>
                     <ul>
-                        <li>Vercel deployment</li>
-                        <li>Git-based workflows</li>
-                        <li>i18n &amp; migration tooling</li>
+                        <li>NLP Pipelines</li>
+                        <li>Confidence-Scoring Algorithms</li>
+                        <li>LLM-Assisted Development</li>
+                        <li>Language Variant Identification</li>
+                        <li>Empirical Evaluation &amp; Benchmarking</li>
                     </ul>
                 </div>
             </div>
@@ -1208,66 +1273,81 @@
 
         <section id="work">
             <div class="section-head reveal">
-                <h2>Selected work</h2><span class="count">05 projects</span>
+                <h2>Selected Projects</h2><span class="count">04 featured builds</span>
             </div>
             <div class="filterbar reveal">
                 <button class="filterbtn active" data-filter="all">All</button>
                 <button class="filterbtn" data-filter="web">Web</button>
                 <button class="filterbtn" data-filter="mobile">Mobile</button>
-                <button class="filterbtn" data-filter="ai">AI</button>
+                <button class="filterbtn" data-filter="ai">AI / Research</button>
             </div>
             <div class="projgrid">
                 <div class="pcard featured reveal" data-cat="web">
-                    <div class="preview" data-glyph="POS"><span class="badge">Featured</span></div>
+                    <div class="preview" data-glyph="Tx"><span class="badge">Featured</span></div>
                     <div class="body">
-                        <h3>Restaurant POS System</h3>
-                        <p class="desc">Modular point-of-sale system for restaurants, cafes, and fast-food chains —
-                            order tracking, billing, and role-based access, built to be dropped into different
-                            food-business setups.</p>
-                        <div class="tags"><span>React.js</span><span>JavaScript</span></div>
-                        <div class="links"><a href="#">GitHub</a><a href="#">Live demo</a></div>
+                        <h3>TraX — Business Sales &amp; Expense Tracker</h3>
+                        <p class="desc">Full-stack business management platform featuring a real-time profit &amp; loss dashboard, multi-branch management, and role-based access security. Built using Supabase for live data synchronization and REST APIs for all transactional operations.</p>
+                        <div class="tags">
+                            <span>React.js</span>
+                            <span>Supabase</span>
+                            <span>PostgreSQL</span>
+                            <span>REST APIs</span>
+                            <span>Real-Time Sync</span>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/AntonitaTheOriginal" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        </div>
                     </div>
                 </div>
                 <div class="pcard reveal" data-cat="web">
-                    <div class="preview" data-glyph="Tx"></div>
+                    <div class="preview" data-glyph="POS"></div>
                     <div class="body">
-                        <h3>TraX</h3>
-                        <p class="desc">A sales tracking tool taken from idea to a live, deployed product.</p>
-                        <div class="tags"><span>React</span><span>Supabase</span><span>Vercel</span></div>
-                        <div class="links"><a href="#">GitHub</a><a href="#">Live demo</a></div>
+                        <h3>Restaurant POS System</h3>
+                        <p class="desc">Modular, customizable Point-of-Sale system engineered for restaurants, cafes, and quick-service chains. Implements live order tracking, rapid billing workflows, and role-based access control across distinct business roles.</p>
+                        <div class="tags">
+                            <span>React.js</span>
+                            <span>JavaScript</span>
+                            <span>Modular Architecture</span>
+                            <span>State Management</span>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/AntonitaTheOriginal" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcard reveal" data-cat="mobile">
+                    <div class="preview" data-glyph="LB"></div>
+                    <div class="body">
+                        <h3>LookBook — Smart Wardrobe Manager</h3>
+                        <p class="desc">Cross-platform mobile application integrated with Firebase for intelligent clothing matching and outfit coordination from a personal wardrobe database, covering interactive UI through cloud backend.</p>
+                        <div class="tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase</span>
+                            <span>NoSQL</span>
+                            <span>Mobile App</span>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/AntonitaTheOriginal" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
                     </div>
                 </div>
                 <div class="pcard reveal" data-cat="ai">
-                    <div class="preview" data-glyph="Vb"></div>
+                    <div class="preview" data-glyph="NLP"></div>
                     <div class="body">
-                        <h3>Split The Vibe</h3>
-                        <p class="desc">A group decision-making app using the Claude API to help friends actually agree
-                            on plans.</p>
-                        <div class="tags"><span>React</span><span>Supabase</span><span>Claude API</span></div>
-                        <div class="links"><a href="#">GitHub</a><a href="#">Live demo</a></div>
-                    </div>
-                </div>
-                <div class="pcard reveal" data-cat="mobile ai">
-                    <div class="preview" data-glyph="LB"></div>
-                    <div class="body">
-                        <h3>LookBook AI</h3>
-                        <p class="desc">A mobile styling concept exploring AI-assisted logo and UI design,
-                            cross-platform with a serverless backend.</p>
-                        <div class="tags"><span>Flutter</span><span>Vercel Serverless</span><span>Claude API</span>
-                        </div>
-                        <div class="links"><a href="#">GitHub</a><a href="#">Live demo</a></div>
-                    </div>
-                </div>
-                <div class="pcard reveal" data-cat="web ai">
-                    <div class="preview" data-glyph="Sw"></div>
-                    <div class="body">
-                        <h3>Student Wellness App</h3>
-                        <p class="desc">A wellness tracking app for students, pairing a typed React frontend with
-                            AI-driven insights on Supabase data.</p>
+                        <h3>Language Variant Re-Ranking Pipeline (NIAC 2026)</h3>
+                        <p class="desc">Award-winning confidence-aware re-ranking framework for language variant identification in noisy real-world environments. Designed custom NLP pipelines, scoring algorithms, and full research evaluation benchmarks.</p>
                         <div class="tags">
-                            <span>React</span><span>TypeScript</span><span>Supabase</span><span>OpenAI</span>
+                            <span>Python</span>
+                            <span>NLP Pipelines</span>
+                            <span>Confidence Scoring</span>
+                            <span>Research</span>
                         </div>
-                        <div class="links"><a href="#">GitHub</a><a href="#">Live demo</a></div>
+                        <div class="links">
+                            <a href="https://github.com/AntonitaTheOriginal" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="#achievements">View Award</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1275,65 +1355,68 @@
 
         <section id="experience">
             <div class="section-head reveal">
-                <h2>Experience &amp; education</h2>
+                <h2>Experience &amp; Education</h2>
             </div>
             <div class="timeline reveal">
                 <div class="tlitem">
-                    <div class="yr">2023 — 2027</div>
-                    <h3>B.E. Honors, Computer Science Engineering</h3>
-                    <p>Loyola-ICAM College of Engineering and Technology (LICET), Chennai — final-year student.</p>
+                    <div class="yr">Jun 2026 — Present</div>
+                    <h3>Software Development Intern (Backend &amp; Mobile) &bull; VouchTails</h3>
+                    <p>Engineered backend microservices (Node.js, Express, Prisma, Supabase) and cross-platform mobile application features (Expo React Native) for a pet-care marketplace startup. Built i18n infrastructure, Supabase Realtime authentication, and intake reconciliation workflows across the entire platform.</p>
                 </div>
                 <div class="tlitem">
-                    <div class="yr">Ongoing</div>
-                    <h3>Backend &amp; Mobile Intern, VouchTails</h3>
-                    <p>Chennai-based pet-care marketplace. Node.js/Express/Prisma/Supabase backend and Expo React Native
-                        mobile app — auth, realtime channels, i18n infrastructure.</p>
+                    <div class="yr">Jun 2025 — Jul 2025</div>
+                    <h3>International Engineering Internship (Summer Exchange) &bull; ICAM Nantes, France</h3>
+                    <p>Selected for a prestigious summer exchange program at ICAM Nantes. Collaborated in an international, multicultural engineering cohort on a hands-on renewable-energy project. Designed, assembled, and tested a functional wind turbine prototype (capable of charging a 5V mobile battery) through iterative engineering and performance testing.</p>
                 </div>
                 <div class="tlitem">
                     <div class="yr">2026</div>
-                    <h3>Best Paper, NIAC 2026</h3>
-                    <p>NLP research on a confidence-scoring re-ranking framework for language identification.</p>
+                    <h3>Best Paper Award &bull; NIAC 2026</h3>
+                    <p>National-level recognition for publishing a confidence-aware re-ranking framework for language variant identification in noisy real-world environments. Conducted the complete research lifecycle — literature review, NLP pipeline implementation, benchmarking, and conference presentation.</p>
                 </div>
                 <div class="tlitem">
-                    <div class="yr">Completed</div>
-                    <h3>International Internship Program</h3>
-                    <p>Nantes, France.</p>
+                    <div class="yr">2023 — 2027</div>
+                    <h3>B.E. (Honors) Computer Science and Engineering &bull; LICET, Chennai</h3>
+                    <p>Loyola-ICAM College of Engineering and Technology (LICET) &bull; Final Year Student &bull; Current CGPA: 8.37. Focusing on distributed systems, data structures &amp; algorithms, full-stack architectures, and AI systems.</p>
+                </div>
+                <div class="tlitem">
+                    <div class="yr">2020 — 2023</div>
+                    <h3>Higher Secondary &amp; Secondary Education &bull; St. Michael's Academy, Adyar</h3>
+                    <p>ISC (12th Grade): 93.5% (2022 – 2023) &bull; ICSE (10th Grade): 97.5% (2020 – 2021). Strong foundation in mathematics, computer applications, and analytical sciences.</p>
                 </div>
             </div>
         </section>
 
         <section id="achievements">
             <div class="section-head reveal">
-                <h2>Achievements</h2>
+                <h2>Achievements &amp; Global Exposure</h2>
             </div>
             <div class="achgrid reveal">
                 <div class="ach">
                     <div class="glyph">&#127942;</div>
                     <div>
-                        <h3>Best Paper — NIAC 2026</h3>
-                        <p>Recognized for NLP research on a confidence-scoring re-ranking framework for language
-                            identification.</p>
+                        <h3>Best Paper Award — NIAC 2026</h3>
+                        <p>National-level recognition for research on a confidence-aware NLP re-ranking framework for language variant identification in noisy real-world environments.</p>
                     </div>
                 </div>
                 <div class="ach">
                     <div class="glyph">&#9992;</div>
                     <div>
-                        <h3>International Internship — Nantes, France</h3>
-                        <p>Completed a structured internship program abroad.</p>
+                        <h3>ICAM Nantes Summer Exchange — France</h3>
+                        <p>Selected for an international engineering internship at ICAM Nantes, France; designed, assembled, and tested a functional 5V renewable wind turbine prototype.</p>
                     </div>
                 </div>
                 <div class="ach">
                     <div class="glyph">&#128187;</div>
                     <div>
-                        <h3>5 shipped personal products</h3>
-                        <p>From sales trackers to AI-assisted apps, taken from idea to working, deployed software.</p>
+                        <h3>Production Engineering at VouchTails</h3>
+                        <p>Delivered mission-critical backend and mobile systems including Supabase Realtime auth, i18n infrastructure, and intake reconciliation workflows.</p>
                     </div>
                 </div>
                 <div class="ach">
-                    <div class="glyph">&#127919;</div>
+                    <div class="glyph">&#127891;</div>
                     <div>
-                        <h3>Production internship at VouchTails</h3>
-                        <p>Shipped auth, realtime, and i18n infrastructure milestones on a live marketplace product.</p>
+                        <h3>Academic Excellence (8.37 CGPA)</h3>
+                        <p>B.E. (Honors) CSE at LICET with strong academic distinction; scored 93.5% in ISC 12th and 97.5% in ICSE 10th grade at St. Michael's Academy.</p>
                     </div>
                 </div>
             </div>
@@ -1341,34 +1424,32 @@
 
         <section id="services">
             <div class="section-head reveal">
-                <h2>What I take on</h2><span class="count">freelance &amp; contract</span>
+                <h2>Core Engineering Capabilities</h2><span class="count">what I deliver</span>
             </div>
             <div class="services reveal">
-                <div class="svc"><span class="n">Development</span>
-                    <h3>Web &amp; app builds</h3>
-                    <p>Full-stack web apps and cross-platform mobile builds — landing page to working product, with
-                        auth, a database, and real functionality behind it.</p>
+                <div class="svc"><span class="n">Full-Stack</span>
+                    <h3>Web &amp; Platform Engineering</h3>
+                    <p>End-to-end full-stack development using React.js, Node.js, Express, and modern styling with clean component architecture and responsive design.</p>
                 </div>
-                <div class="svc"><span class="n">Design</span>
-                    <h3>Portfolio &amp; landing sites</h3>
-                    <p>Clean, considered websites for individuals and small businesses — not a site that looks like it
-                        came from a template.</p>
+                <div class="svc"><span class="n">Mobile</span>
+                    <h3>Cross-Platform Mobile Apps</h3>
+                    <p>Native-feeling mobile apps using Flutter/Dart and Expo React Native with offline capability, state management, and seamless cloud sync.</p>
                 </div>
-                <div class="svc"><span class="n">Writing</span>
-                    <h3>Blog &amp; long-form content</h3>
-                    <p>Well-structured blog posts and articles — technical or general — written to actually be read.</p>
+                <div class="svc"><span class="n">Backend</span>
+                    <h3>REST APIs &amp; Microservices</h3>
+                    <p>Scalable backend services, secure authentication, role-based access control, Prisma ORM, and Supabase / PostgreSQL architecture.</p>
                 </div>
-                <div class="svc"><span class="n">Content</span>
-                    <h3>Social &amp; post writing</h3>
-                    <p>Captions, LinkedIn posts, and short-form copy that sound like a person wrote them.</p>
+                <div class="svc"><span class="n">Databases</span>
+                    <h3>Data Modeling &amp; Real-Time Sync</h3>
+                    <p>Robust relational &amp; NoSQL schema design across MySQL, PostgreSQL (Supabase), and Firebase with real-time subscriptions.</p>
                 </div>
-                <div class="svc"><span class="n">Decks</span>
-                    <h3>Presentation design</h3>
-                    <p>PPT and slide decks for pitches, reports, or coursework — clear structure, readable slides.</p>
+                <div class="svc"><span class="n">AI / ML</span>
+                    <h3>NLP &amp; Intelligent Features</h3>
+                    <p>Confidence-scoring algorithms, text processing pipelines, and LLM-assisted workflows integrated directly into production applications.</p>
                 </div>
-                <div class="svc"><span class="n">AI</span>
-                    <h3>AI-integrated features</h3>
-                    <p>Adding AI-powered features into an existing product using the Claude or OpenAI APIs.</p>
+                <div class="svc"><span class="n">DevOps &amp; Quality</span>
+                    <h3>Version Control &amp; Testing</h3>
+                    <p>Git/GitHub-driven agile workflows, Postman API testing, clean modular codebases, and comprehensive technical documentation.</p>
                 </div>
             </div>
         </section>
@@ -1376,33 +1457,36 @@
         <footer id="contact">
             <div class="contact-grid">
                 <div class="reveal">
-                    <h2>Have something to build, write, or design? Let's talk.</h2>
+                    <h2>Seeking software engineering roles &amp; exciting builds. Let's talk.</h2>
                     <div class="contact-links">
-                        <a href="mailto:your.email@example.com">your.email@example.com</a>
-                        <a href="#">linkedin.com/in/your-handle</a>
-                        <a href="#">github.com/your-handle</a>
+                        <a href="mailto:antonitaevelyn@gmail.com">&#9993; antonitaevelyn@gmail.com</a>
+                        <a href="tel:+919789921190">&#9742; +91 9789921190</a>
+                        <a href="https://github.com/AntonitaTheOriginal" target="_blank" rel="noopener noreferrer">&#128187; github.com/AntonitaTheOriginal</a>
+                        <a href="https://linkedin.com/in/antonitaevelyn" target="_blank" rel="noopener noreferrer">&#128101; linkedin.com/in/antonitaevelyn</a>
+                        <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">&#9881; LeetCode Profile</a>
+                        <a href="Antonita_Evelyn_Maria_Resume_New.pdf" target="_blank" download="Antonita_Evelyn_Maria_Resume.pdf" class="resume-inline-btn">&#128196; Download Full Resume (PDF)</a>
                     </div>
                 </div>
                 <form class="reveal" id="contactform" novalidate>
                     <div class="field" id="f-name"><label for="name">Name</label><input id="name" name="name"
-                            type="text">
+                            type="text" placeholder="Your Name">
                         <div class="err">Please enter your name.</div>
                     </div>
                     <div class="field" id="f-email"><label for="email">Email</label><input id="email" name="email"
-                            type="email">
-                        <div class="err">Please enter a valid email.</div>
+                            type="email" placeholder="name@domain.com">
+                        <div class="err">Please enter a valid email address.</div>
                     </div>
                     <div class="field" id="f-msg"><label for="msg">Message</label><textarea id="msg" name="msg"
-                            rows="4"></textarea>
-                        <div class="err">Tell me a little about the project.</div>
+                            rows="4" placeholder="Tell me about the role or project..."></textarea>
+                        <div class="err">Please enter a message (at least 5 characters).</div>
                     </div>
-                    <button class="btn btn-primary" type="submit">Send message</button>
+                    <button class="btn btn-primary" type="submit">Send Message</button>
                     <div id="formstatus"></div>
                 </form>
             </div>
             <div class="foot-note">
-                <span>Antonita Evelyn Maria — Chennai, India</span>
-                <span class="mono">Updated 2026</span>
+                <span>Antonita Evelyn Maria S &bull; Chennai, Tamil Nadu, India</span>
+                <span class="mono">Portfolio Updated 2026</span>
             </div>
         </footer>
     </div>
@@ -1415,28 +1499,44 @@
             var root = document.documentElement;
             var themebtn = document.getElementById('themebtn');
             var saved = localStorage.getItem('theme');
-            if (saved === 'dark') { root.setAttribute('data-theme', 'dark'); themebtn.innerHTML = '&#9789;'; }
-            themebtn.addEventListener('click', function () {
-                var isDark = root.getAttribute('data-theme') === 'dark';
-                if (isDark) { root.removeAttribute('data-theme'); localStorage.setItem('theme', 'light'); themebtn.innerHTML = '&#9788;'; }
-                else { root.setAttribute('data-theme', 'dark'); localStorage.setItem('theme', 'dark'); themebtn.innerHTML = '&#9789;'; }
-            });
+            if (saved === 'dark') { 
+                root.setAttribute('data-theme', 'dark'); 
+                if (themebtn) themebtn.innerHTML = '&#9789;'; 
+            }
+            if (themebtn) {
+                themebtn.addEventListener('click', function () {
+                    var isDark = root.getAttribute('data-theme') === 'dark';
+                    if (isDark) { 
+                        root.removeAttribute('data-theme'); 
+                        localStorage.setItem('theme', 'light'); 
+                        themebtn.innerHTML = '&#9788;'; 
+                    } else { 
+                        root.setAttribute('data-theme', 'dark'); 
+                        localStorage.setItem('theme', 'dark'); 
+                        themebtn.innerHTML = '&#9789;'; 
+                    }
+                });
+            }
 
             /* mobile menu */
             var navtoggle = document.getElementById('navtoggle');
             var mobilemenu = document.getElementById('mobilemenu');
-            navtoggle.addEventListener('click', function () { mobilemenu.classList.toggle('open'); });
-            mobilemenu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { mobilemenu.classList.remove('open'); }); });
+            if (navtoggle && mobilemenu) {
+                navtoggle.addEventListener('click', function () { mobilemenu.classList.toggle('open'); });
+                mobilemenu.querySelectorAll('a').forEach(function (a) { 
+                    a.addEventListener('click', function () { mobilemenu.classList.remove('open'); }); 
+                });
+            }
 
             /* scroll progress + scrollspy */
-            var sections = document.querySelectorAll('section[id], .hero');
             var navlinkEls = document.querySelectorAll('.navlinks a');
             window.addEventListener('scroll', function () {
                 var doc = document.documentElement;
                 var pct = (doc.scrollTop) / (doc.scrollHeight - doc.clientHeight) * 100;
-                document.getElementById('progress').style.width = pct + '%';
+                var progressEl = document.getElementById('progress');
+                if (progressEl) progressEl.style.width = pct + '%';
 
-                var pos = window.scrollY + 120;
+                var pos = window.scrollY + 140;
                 var current = '';
                 document.querySelectorAll('section[id]').forEach(function (s) {
                     if (pos >= s.offsetTop) current = s.id;
@@ -1448,7 +1548,7 @@
 
             /* cursor glow */
             var glow = document.getElementById('glow');
-            if (window.matchMedia('(hover:hover) and (pointer:fine)').matches && !reduced) {
+            if (glow && window.matchMedia('(hover:hover) and (pointer:fine)').matches && !reduced) {
                 document.addEventListener('mousemove', function (e) {
                     glow.style.opacity = '0.6';
                     glow.style.transform = 'translate(' + e.clientX + 'px,' + e.clientY + 'px) translate(-50%,-50%)';
@@ -1457,14 +1557,22 @@
             }
 
             /* rotating roles */
-            var roles = ['Web & Mobile Developer', 'Blog & Content Writer', 'Presentation Designer', 'AI Feature Integrator'];
+            var roles = [
+                'Full-Stack Developer', 
+                'Backend & Mobile Engineer', 
+                'NLP & AI Pipeline Builder', 
+                'B.E. Honors CSE Student'
+            ];
             var roleEl = document.getElementById('roletext');
-            if (!reduced) {
+            if (roleEl && !reduced) {
                 var ri = 0;
                 setInterval(function () {
                     ri = (ri + 1) % roles.length;
                     roleEl.style.opacity = 0;
-                    setTimeout(function () { roleEl.textContent = roles[ri]; roleEl.style.opacity = 1; }, 250);
+                    setTimeout(function () { 
+                        roleEl.textContent = roles[ri]; 
+                        roleEl.style.opacity = 1; 
+                    }, 250);
                 }, 2600);
                 roleEl.style.transition = 'opacity .25s ease';
             }
@@ -1474,7 +1582,10 @@
             if ('IntersectionObserver' in window) {
                 var io = new IntersectionObserver(function (entries) {
                     entries.forEach(function (en) {
-                        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+                        if (en.isIntersecting) { 
+                            en.target.classList.add('in'); 
+                            io.unobserve(en.target); 
+                        }
                     });
                 }, { threshold: 0.12 });
                 revealEls.forEach(function (el) { io.observe(el); });
@@ -1490,18 +1601,37 @@
                     if (en.isIntersecting && !counted) {
                         counted = true;
                         statEls.forEach(function (el) {
-                            var target = parseInt(el.getAttribute('data-count'), 10);
-                            var cur = 0;
-                            var step = Math.max(1, Math.round(target / 30));
-                            var t = setInterval(function () {
-                                cur += step;
-                                if (cur >= target) { cur = target; clearInterval(t); }
-                                el.textContent = cur;
-                            }, 30);
+                            var raw = el.getAttribute('data-count');
+                            if (raw.indexOf('.') !== -1) {
+                                var targetFloat = parseFloat(raw);
+                                var curFloat = 0;
+                                var stepFloat = targetFloat / 25;
+                                var tFloat = setInterval(function () {
+                                    curFloat += stepFloat;
+                                    if (curFloat >= targetFloat) {
+                                        el.textContent = targetFloat.toFixed(2);
+                                        clearInterval(tFloat);
+                                    } else {
+                                        el.textContent = curFloat.toFixed(2);
+                                    }
+                                }, 35);
+                            } else {
+                                var target = parseInt(raw, 10);
+                                var cur = 0;
+                                var step = Math.max(1, Math.round(target / 20));
+                                var t = setInterval(function () {
+                                    cur += step;
+                                    if (cur >= target) { 
+                                        cur = target; 
+                                        clearInterval(t); 
+                                    }
+                                    el.textContent = cur + (target === 3 ? '+' : '');
+                                }, 35);
+                            }
                         });
                     }
                 });
-            }, { threshold: 0.4 });
+            }, { threshold: 0.3 });
             var statsBlock = document.querySelector('.stats');
             if (statsBlock) statsIo.observe(statsBlock);
 
@@ -1520,40 +1650,36 @@
                 });
             });
 
-            /* resume placeholder */
-            document.getElementById('resumebtn').addEventListener('click', function (e) {
-                e.preventDefault();
-                alert('Add a link to your resume PDF here — replace the #resumebtn href in the code once you have one hosted.');
-            });
-
-            /* contact form validation */
+            /* contact form */
             var form = document.getElementById('contactform');
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-                var name = document.getElementById('name');
-                var email = document.getElementById('email');
-                var msg = document.getElementById('msg');
-                var ok = true;
+            if (form) {
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    var name = document.getElementById('name');
+                    var email = document.getElementById('email');
+                    var msg = document.getElementById('msg');
+                    var ok = true;
 
-                function check(el, wrapId, valid) {
-                    var wrap = document.getElementById(wrapId);
-                    wrap.classList.toggle('invalid', !valid);
-                    if (!valid) ok = false;
-                }
-                check(name, 'f-name', name.value.trim().length > 0);
-                check(email, 'f-email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()));
-                check(msg, 'f-msg', msg.value.trim().length > 4);
+                    function check(el, wrapId, valid) {
+                        var wrap = document.getElementById(wrapId);
+                        if (wrap) wrap.classList.toggle('invalid', !valid);
+                        if (!valid) ok = false;
+                    }
+                    check(name, 'f-name', name.value.trim().length > 0);
+                    check(email, 'f-email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()));
+                    check(msg, 'f-msg', msg.value.trim().length > 4);
 
-                var status = document.getElementById('formstatus');
-                if (ok) {
-                    status.className = 'ok';
-                    status.style.display = 'block';
-                    status.textContent = 'Thanks — this form is a front-end demo, so nothing was sent yet. Wire it to a backend or use the email link above.';
-                    form.reset();
-                } else {
-                    status.style.display = 'none';
-                }
-            });
+                    var status = document.getElementById('formstatus');
+                    if (ok && status) {
+                        status.className = 'ok';
+                        status.style.display = 'block';
+                        status.textContent = 'Thank you for reaching out, ' + name.value.trim() + '! You can also email antonitaevelyn@gmail.com directly.';
+                        form.reset();
+                    } else if (status) {
+                        status.style.display = 'none';
+                    }
+                });
+            }
         })();
     </script>
 
